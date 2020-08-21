@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Vue.js</title>
+	<meta charset="utf-8" />
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+	<!--<script src="https://cdn.jsdelivr.net/npm/vue"></script>-->
+	<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+	<div id="app">
+		<header class="header">
+
+	
+
+		</header>
+		<section class="container">
+			<section class="container__content">
+
+				Digite o nome: <input v-model="name" /><br/>
+
+				<div>
+					<button @click="createContact">Adicionar</button>
+				</div>
+			
+				
+			</section>
+			<aside class="container__sidebar">
+
+				<ul>
+					<li v-for="item in list">{{ item }}</li>
+					<br/>
+					Número de contatos: {{list.length}}
+				</ul>
+
+			</aside>
+		</section>
+		<footer class="footer">
+		
+			</form>
+		</footer>
+	</div>
+
+	<script src="script.js"></script>
+</body>
+</html>
