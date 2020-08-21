@@ -1,21 +1,30 @@
 let app = new Vue({
-	el:'#app',
-	data:{  
-        name: '',
+    el:'#app',
+    data: {
+
+        nameInput: '',
         list: []
 
     },
+
     methods: {
 
-        createContact: function(){
 
-            if(this.name.length > 0) {
+        createContact: function() {
 
-                this.list.push(this.name);
+            if(this.nameInput.length > 0) {
 
-                this.name = '';
+                this.list.push(this.nameInput);
+
+                this.nameInput = '';
+
             }
+
         }
+        
+
 
     }
-});
+
+
+})

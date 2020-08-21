@@ -11,27 +11,30 @@
 	<div id="app">
 		<header class="header">
 
-	
+			
 
 		</header>
 		<section class="container">
 			<section class="container__content">
 
-				Digite o nome: <input v-model="name" /><br/>
+				Digite um nome: <input v-model="nameInput" />
 
 				<div>
+
 					<button @click="createContact">Adicionar</button>
+					
 				</div>
-			
-				
+		
 			</section>
 			<aside class="container__sidebar">
 
 				<ul>
-					<li v-for="item in list">{{ item }}</li>
-					<br/>
-					Número de contatos: {{list.length}}
+					<li v-for="name in list">{{ name }}</li>
 				</ul>
+
+				Número de contatos: {{ list.length }}
+
+				
 
 			</aside>
 		</section>
